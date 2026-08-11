@@ -1,0 +1,3 @@
+# Local (per-machine, never shared)
+*.local
+*.local.*
