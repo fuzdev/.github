@@ -29,9 +29,7 @@ and what it's made of:
 
 ## the stack
 
-From what you make down to what it's made of. The same map lives at
-[fuz.dev/stack](https://www.fuz.dev/stack); names link to the repos, and the trailing
-link is the project's docs site.
+The same map lives at [fuz.dev/stack](https://www.fuz.dev/stack).
 
 ### apps and sites
 
@@ -88,7 +86,8 @@ System tools in Rust: set up and deploy to Linux machines, and an embeddable Pos
 
 ## what it rests on
 
-Open technologies Fuz builds on, none of them Fuz's own.
+The above are the stack's first-party software projects.
+Fuz builds on the following open technologies, relying on their communities:
 
 - **languages and runtimes** · TypeScript, Node, V8, Rust, Cargo, WASM · TypeScript on Node for the web side, Rust for native tools and WASM in the browser.
 - **frontend** · Svelte, SvelteKit, HTML, CSS, JS, Web APIs
