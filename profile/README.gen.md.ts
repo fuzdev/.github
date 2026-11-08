@@ -62,10 +62,9 @@ export const gen: Gen = {
 
 # Fuz
 
-> free software for human agency 🕸 **[fuz.dev](${FUZ_DEV_URL}/)**
-
-Fuz is a free software stack designed for human agency: tools and libraries in
-TypeScript, CSS, Svelte, and Rust, building on open web and native foundations.
+Fuz ([fuz.dev](${FUZ_DEV_URL}/)) is a free software stack designed for human agency:
+it provides tools and libraries in TypeScript, CSS, Svelte, and Rust, building on
+open web and native foundations.
 It bakes in some opinions but is designed for modularity, so you can use a
 single piece or whichever parts fit your project. All of the code is licensed
 with the public-domain-equivalent [0BSD](${LICENSE_URL}).
@@ -99,7 +98,10 @@ ${layer.pieces.map(render_piece).join('\n')}`);
 Open technologies Fuz builds on, none of them Fuz's own.
 
 ${foundation_groups
-	.map((group) => `- **${group.name}**${SEP}${group.items.join(', ')}${SEP}${group.blurb}`)
+	.map((group) =>
+		[`**${group.name}**`, group.items.join(', '), ...(group.blurb ? [group.blurb] : [])].join(SEP)
+	)
+	.map((line) => `- ${line}`)
 	.join('\n')}`);
 
 		sections.push(`## more

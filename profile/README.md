@@ -4,10 +4,9 @@
 
 # Fuz
 
-> free software for human agency 🕸 **[fuz.dev](https://www.fuz.dev/)**
-
-Fuz is a free software stack designed for human agency: tools and libraries in
-TypeScript, CSS, Svelte, and Rust, building on open web and native foundations.
+Fuz ([fuz.dev](https://www.fuz.dev/)) is a free software stack designed for human agency:
+it provides tools and libraries in TypeScript, CSS, Svelte, and Rust, building on
+open web and native foundations.
 It bakes in some opinions but is designed for modularity, so you can use a
 single piece or whichever parts fit your project. All of the code is licensed
 with the public-domain-equivalent [0BSD](https://opensource.org/license/0bsd).
@@ -45,7 +44,7 @@ What gets built on the stack, starting with the template and the apps Fuz runs i
 
 ### fullstack
 
-Choose TypeScript or Rust for the backend, or both: fuz_app on Hono and fuz on Axum share a server pattern for auth, sessions, database, APIs, and tests, and a data model: mutable cells that reference immutable facts (content-addressed bytes), changed by actions (schema-validated, serializable calls). SvelteKit handles the frontend, static or server-rendered. Deploy local-first or to the cloud, natively or on Node or Bun.
+A backend in TypeScript or Rust or both, sharing one server pattern for auth, sessions, database, and APIs and one data model of cells, facts, and actions, with SvelteKit in front and deploys local-first or to the cloud.
 
 - **[fuz_app](https://github.com/fuzdev/fuz_app)** · fullstack app library: auth, sessions, accounts, database, and middleware for SvelteKit and Hono · `early` `ts` · [app.fuz.dev](https://app.fuz.dev/)
 - **[fuz](https://github.com/fuzdev/fuz)** · the fuz CLI, fuzd daemon, and the Rust crates beneath the stack's servers · `early` `rust`
@@ -77,7 +76,7 @@ Run tasks, parse and format in the terminal or editor, analyze code, and manage 
 Small building blocks: helpers JS lacks, types, async, schemas, and hashing.
 
 - **[fuz_util](https://github.com/fuzdev/fuz_util)** · utility belt for JS: helpers, types, async, and logging · `ready` `ts` · [util.fuz.dev](https://util.fuz.dev/)
-- **[fuz_schema](https://github.com/fuzdev/fuz_schema)** · performance-focused Standard Schema library for JS, with a Rust side that validates JSON text · `early` `ts` `rust` · [schema.fuz.dev](https://schema.fuz.dev/)
+- **[fuz_schema](https://github.com/fuzdev/fuz_schema)** · performance-focused Standard Schema library for JS, with a Rust side that validates JSON text · `ready` `ts` `rust` · [schema.fuz.dev](https://schema.fuz.dev/)
 - **[blake3](https://github.com/fuzdev/blake3)** · BLAKE3 hashing compiled to WASM · `ready` `rust` `wasm`
 
 ### native and data
@@ -91,9 +90,9 @@ System tools in Rust: set up and deploy to Linux machines, and an embeddable Pos
 
 Open technologies Fuz builds on, none of them Fuz's own.
 
-- **languages and runtimes** · TypeScript, Node, V8, Rust, Cargo, WASM · TypeScript on Node for the web side, Rust for the native tier and for WASM in the browser.
-- **frontend** · Svelte, SvelteKit, HTML, CSS, JS, Web APIs · Svelte and SvelteKit over the open web platform.
-- **data** · filesystem, PostgreSQL, PGlite · The filesystem and PostgreSQL, with PGlite for embedded use.
+- **languages and runtimes** · TypeScript, Node, V8, Rust, Cargo, WASM · TypeScript on Node for the web side, Rust for native tools and WASM in the browser.
+- **frontend** · Svelte, SvelteKit, HTML, CSS, JS, Web APIs
+- **data** · filesystem, PostgreSQL, PGlite
 - **OS** · Linux · Developed and deployed on Linux; macOS and Windows support varies by tool.
 
 ## more
