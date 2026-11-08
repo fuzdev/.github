@@ -12,20 +12,11 @@ single piece or whichever parts fit your project. All of the code is licensed
 with the public-domain-equivalent [0BSD](https://opensource.org/license/0bsd).
 For the story behind it, read the [intro post](https://www.fuz.dev/blog/1-fuz-is-a-free-software-stack-for-human-agency).
 
-Everything is pre-1.0 and changes without deprecation. Each piece below is
-marked by where it stands:
+Everything is pre-1.0 and changes without deprecation. Each part has a status:
 
 - `ready` usable in production; pre-1.0, so follow the changesets
 - `early` pre-alpha and under active construction; expect gaps
 - `experimental` exploring a direction; may change shape or not survive
-
-and what it's made of:
-
-- `ts` TypeScript
-- `svelte` Svelte and SvelteKit
-- `css` CSS
-- `rust` Rust
-- `wasm` WASM, compiled from Rust
 
 ## the stack
 
