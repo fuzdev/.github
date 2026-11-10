@@ -65,7 +65,7 @@ Run tasks, parse and format in the terminal or editor, analyze code, and manage 
 Small building blocks: helpers JS lacks, types, async, schemas, and hashing.
 
 - **[fuz_util](https://github.com/fuzdev/fuz_util)** · utility belt for JS: helpers, types, async, and logging · `ready` `ts` · [util.fuz.dev](https://util.fuz.dev/)
-- **[fuz_schema](https://github.com/fuzdev/fuz_schema)** · performance-focused Standard Schema library for JS, with a Rust side that validates JSON text · `ready` `ts` `rust` · [schema.fuz.dev](https://schema.fuz.dev/)
+- **[fuz_schema](https://github.com/fuzdev/fuz_schema)** · performance-focused schema library for JS, with a Rust side that validates JSON text · `ready` `ts` `rust` · [schema.fuz.dev](https://schema.fuz.dev/)
 - **[blake3](https://github.com/fuzdev/blake3)** · BLAKE3 hashing compiled to WASM · `ready` `rust` `wasm`
 
 ### native and data
